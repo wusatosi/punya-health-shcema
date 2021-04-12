@@ -1,0 +1,35 @@
+<rdf: RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:owl="http://www.w3.org/2002/07/owl#" 
+	
+	
+	<rdfs:Class rdfs:label="Meal">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+	</rds:Class>
+	
+	<rdf:Property rdfs:label="time">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+		<rdfs:domain rdf:resource=":Meal"/>
+		<rdfs:range rdf:resource="xsd:DateTimeDescription"/>
+	</rdf:Property>
+	
+	<rdf:Property rdfs:label="consumer">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+		<rdfs:domain rdf:resource=":Meal"/>
+		<rdfs:range rdf:resource="foaf:person"/>
+	</rdf:Property>	
+	
+	<rdf:Property rdfs:label="content">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+		<rdfs:domain rdf:resource=":Meal"/>
+		<rdfs:range rdf:resource="foodkg:recipie"/> <!-- or list of foodkg:food --> 
+	</rdf:Property>	
+
+</rdf: RDF>
+
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+	
+</rdf:RDF>
